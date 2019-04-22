@@ -1,0 +1,52 @@
+.spriter (@x: 0,@y: 0) {
+  width: 25px;
+  height: 25px;
+  background: #cccccc url("../img/icons_3.png") @x*45px @y*27px;
+}
+
+.generate_sprite(@x,@y) {
+  .sprite-@{x}-@{y}{
+    .spriter(@x,@y);
+  }
+}
+
+.generate_sprite(@x,@y) when (@y=0) and (@x>0) {
+  .generate_sprite(@x - 1,@spritey);
+}
+
+.generate_sprite(@x,@y) when (@y>0){
+  .generate_sprite(@x,@y - 1);
+}
+
+
+@spritex: 5;
+@spritey: 1;
+
+
+.generate_sprite(@spritex,@spritey);
+
+
+.opacity( @opacity: 0.8 ) {
+  @ieopacity: @opacity * 100;
+  filter: ~"alpha(opacity = @{ieopacity} )";
+
+  -khtml-opacity: @opacity;
+  -moz-opacity: @opacity;
+  opacity: @opacity;
+}
+
+.border{
+  .opacity( 0.1 )
+}
+
+body {
+  background: gray;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

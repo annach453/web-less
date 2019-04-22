@@ -1,0 +1,242 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@wall-element1-name: 'wall_element1';
+@wall-element1-x: 403px;
+@wall-element1-y: 163px;
+@wall-element1-offset-x: -403px;
+@wall-element1-offset-y: -163px;
+@wall-element1-width: 85px;
+@wall-element1-height: 120px;
+@wall-element1-total-width: 622px;
+@wall-element1-total-height: 576px;
+@wall-element1-image: '~sprite.png';
+@wall-element1: 403px 163px -403px -163px 85px 120px 622px 576px '~sprite.png' 'wall_element1';
+@wall-element10-name: 'wall_element10';
+@wall-element10-x: 0px;
+@wall-element10-y: 163px;
+@wall-element10-offset-x: 0px;
+@wall-element10-offset-y: -163px;
+@wall-element10-width: 259px;
+@wall-element10-height: 163px;
+@wall-element10-total-width: 622px;
+@wall-element10-total-height: 576px;
+@wall-element10-image: '~sprite.png';
+@wall-element10: 0px 163px 0px -163px 259px 163px 622px 576px '~sprite.png' 'wall_element10';
+@wall-element11-name: 'wall_element11';
+@wall-element11-x: 518px;
+@wall-element11-y: 0px;
+@wall-element11-offset-x: -518px;
+@wall-element11-offset-y: 0px;
+@wall-element11-width: 104px;
+@wall-element11-height: 144px;
+@wall-element11-total-width: 622px;
+@wall-element11-total-height: 576px;
+@wall-element11-image: '~sprite.png';
+@wall-element11: 518px 0px -518px 0px 104px 144px 622px 576px '~sprite.png' 'wall_element11';
+@wall-element12-name: 'wall_element12';
+@wall-element12-x: 0px;
+@wall-element12-y: 462px;
+@wall-element12-offset-x: 0px;
+@wall-element12-offset-y: -462px;
+@wall-element12-width: 82px;
+@wall-element12-height: 114px;
+@wall-element12-total-width: 622px;
+@wall-element12-total-height: 576px;
+@wall-element12-image: '~sprite.png';
+@wall-element12: 0px 462px 0px -462px 82px 114px 622px 576px '~sprite.png' 'wall_element12';
+@wall-element13-name: 'wall_element13';
+@wall-element13-x: 259px;
+@wall-element13-y: 163px;
+@wall-element13-offset-x: -259px;
+@wall-element13-offset-y: -163px;
+@wall-element13-width: 144px;
+@wall-element13-height: 140px;
+@wall-element13-total-width: 622px;
+@wall-element13-total-height: 576px;
+@wall-element13-image: '~sprite.png';
+@wall-element13: 259px 163px -259px -163px 144px 140px 622px 576px '~sprite.png' 'wall_element13';
+@wall-element14-name: 'wall_element14';
+@wall-element14-x: 389px;
+@wall-element14-y: 326px;
+@wall-element14-offset-x: -389px;
+@wall-element14-offset-y: -326px;
+@wall-element14-width: 82px;
+@wall-element14-height: 114px;
+@wall-element14-total-width: 622px;
+@wall-element14-total-height: 576px;
+@wall-element14-image: '~sprite.png';
+@wall-element14: 389px 326px -389px -326px 82px 114px 622px 576px '~sprite.png' 'wall_element14';
+@wall-element2-name: 'wall_element2';
+@wall-element2-x: 0px;
+@wall-element2-y: 326px;
+@wall-element2-offset-x: 0px;
+@wall-element2-offset-y: -326px;
+@wall-element2-width: 137px;
+@wall-element2-height: 136px;
+@wall-element2-total-width: 622px;
+@wall-element2-total-height: 576px;
+@wall-element2-image: '~sprite.png';
+@wall-element2: 0px 326px 0px -326px 137px 136px 622px 576px '~sprite.png' 'wall_element2';
+@wall-element3-name: 'wall_element3';
+@wall-element3-x: 82px;
+@wall-element3-y: 462px;
+@wall-element3-offset-x: -82px;
+@wall-element3-offset-y: -462px;
+@wall-element3-width: 81px;
+@wall-element3-height: 114px;
+@wall-element3-total-width: 622px;
+@wall-element3-total-height: 576px;
+@wall-element3-image: '~sprite.png';
+@wall-element3: 82px 462px -82px -462px 81px 114px 622px 576px '~sprite.png' 'wall_element3';
+@wall-element4-name: 'wall_element4';
+@wall-element4-x: 518px;
+@wall-element4-y: 287px;
+@wall-element4-offset-x: -518px;
+@wall-element4-offset-y: -287px;
+@wall-element4-width: 85px;
+@wall-element4-height: 123px;
+@wall-element4-total-width: 622px;
+@wall-element4-total-height: 576px;
+@wall-element4-image: '~sprite.png';
+@wall-element4: 518px 287px -518px -287px 85px 123px 622px 576px '~sprite.png' 'wall_element4';
+@wall-element5-name: 'wall_element5';
+@wall-element5-x: 137px;
+@wall-element5-y: 326px;
+@wall-element5-offset-x: -137px;
+@wall-element5-offset-y: -326px;
+@wall-element5-width: 131px;
+@wall-element5-height: 134px;
+@wall-element5-total-width: 622px;
+@wall-element5-total-height: 576px;
+@wall-element5-image: '~sprite.png';
+@wall-element5: 137px 326px -137px -326px 131px 134px 622px 576px '~sprite.png' 'wall_element5';
+@wall-element6-name: 'wall_element6';
+@wall-element6-x: 268px;
+@wall-element6-y: 326px;
+@wall-element6-offset-x: -268px;
+@wall-element6-offset-y: -326px;
+@wall-element6-width: 121px;
+@wall-element6-height: 119px;
+@wall-element6-total-width: 622px;
+@wall-element6-total-height: 576px;
+@wall-element6-image: '~sprite.png';
+@wall-element6: 268px 326px -268px -326px 121px 119px 622px 576px '~sprite.png' 'wall_element6';
+@wall-element7-name: 'wall_element7';
+@wall-element7-x: 518px;
+@wall-element7-y: 144px;
+@wall-element7-offset-x: -518px;
+@wall-element7-offset-y: -144px;
+@wall-element7-width: 101px;
+@wall-element7-height: 143px;
+@wall-element7-total-width: 622px;
+@wall-element7-total-height: 576px;
+@wall-element7-image: '~sprite.png';
+@wall-element7: 518px 144px -518px -144px 101px 143px 622px 576px '~sprite.png' 'wall_element7';
+@wall-element8-name: 'wall_element8';
+@wall-element8-x: 259px;
+@wall-element8-y: 0px;
+@wall-element8-offset-x: -259px;
+@wall-element8-offset-y: 0px;
+@wall-element8-width: 259px;
+@wall-element8-height: 163px;
+@wall-element8-total-width: 622px;
+@wall-element8-total-height: 576px;
+@wall-element8-image: '~sprite.png';
+@wall-element8: 259px 0px -259px 0px 259px 163px 622px 576px '~sprite.png' 'wall_element8';
+@wall-element9-name: 'wall_element9';
+@wall-element9-x: 0px;
+@wall-element9-y: 0px;
+@wall-element9-offset-x: 0px;
+@wall-element9-offset-y: 0px;
+@wall-element9-width: 259px;
+@wall-element9-height: 163px;
+@wall-element9-total-width: 622px;
+@wall-element9-total-height: 576px;
+@wall-element9-image: '~sprite.png';
+@wall-element9: 0px 0px 0px 0px 259px 163px 622px 576px '~sprite.png' 'wall_element9';
+@spritesheet-width: 622px;
+@spritesheet-height: 576px;
+@spritesheet-image: '~sprite.png';
+@spritesheet-sprites: @wall-element1 @wall-element10 @wall-element11 @wall-element12 @wall-element13 @wall-element14 @wall-element2 @wall-element3 @wall-element4 @wall-element5 @wall-element6 @wall-element7 @wall-element8 @wall-element9;
+@spritesheet: 622px 576px '~sprite.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}
